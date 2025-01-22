@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Starter</title>
+        <link rel="stylesheet" href="./style.css">
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "PnBG9xR3f-jFs-ryB",
+      });
+   })();
+</script>
+	</head>
+	<body>
+
+		<!-- Loader -->
+
+		<div id="loading-container">
+			<div id="load">
+				<span>L</span>
+				<span>O</span>
+				<span>A</span>
+				<span>D</span>
+				<span>I</span>
+				<span>N</span>
+				<span>G</span>
+			</div>
+			<p>Click and drag to interact</p>
+		</div>
+		
+
+		<canvas class="threejs"></canvas>
+
+		<!-- The mail functionality -->
+		<div id="popup">
+			<h3>Send a Message</h3>
+			<form id="emailForm">
+				<input type="text" id="name" required placeholder="Your Email" />
+				<textarea id="message" required placeholder="Your Message"></textarea>
+				<button id="send">Send</button>
+				<button id="closePopup">Close</button>
+			</form>
+		</div>
+	
+		<!-- About me section -->
+		<div id="aboutMe">
+			<div class="container">
+				<img src="/Menus/Your_paragraph_text/1.png" class="image" id="mainImage">
+			</div>
+			<div class="button">
+				<button class="prev"><span>Previous</span></button>
+				<button class="next"><span>Next</span></button>
+			</div>
+			<button id="closeMe">Close</button>
+		</div>
+
+		<!-- Projects -->
+		<div id="projects">
+			<div class="pjBox">
+				<img src="/Menus/Project_01/1.png" class="pjImg" id="mainImagePj">
+			</div>
+			<div class="buttonPj">
+				<button class="prevPj"><span>Previous</span></button>
+				<button class="nextPj"><span>Next</span></button>
+			</div>
+			<button id="closePj">Close</button>
+		</div>
+
+
+
+		<script type="module" src="./main.js"></script>
+	</body>
+</html> 
